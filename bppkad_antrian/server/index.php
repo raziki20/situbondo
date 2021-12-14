@@ -8,7 +8,7 @@
 	    <meta name="author" content="">
 	    <title>Monitoring : Queue</title>
 	    <link href="/bppkad_antrian/assert/css/bootstrap.min.css" rel="stylesheet">
-	    <link href="/bppkad_antrian/assert/css/jumbotron-narrow-monitoring.css" rel="stylesheet">
+	    <link href="/assert/css/jumbotron-narrow-monitoring.css" rel="stylesheet">
 		<script src="/bppkad_antrian/assert/js/jquery.min.js"></script>
 	</head>
   	<body>
@@ -48,7 +48,7 @@
 			<audio id="loket" src="/bppkad_antrian/audio/new/loket.MP3"></audio> 
        	</div>
       <footer class="footer">
-        <center><p>&copy; Sistem Informasi <?php echo date("Y");?></p></center>
+        <center><p>&copy; Sistem Informasi BPPKAD Situbondo <?php echo date("Y");?></p></center>
       </footer> 
     </div>
   	</body>

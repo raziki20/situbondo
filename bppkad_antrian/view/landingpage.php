@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sistem Bank</title>
+    <title>Sistem Antrian BPPKAD Situbondo</title>
         <link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
@@ -30,7 +30,7 @@
 
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Sistem Antrian BPPKAD</a>
+      <a class="navbar-brand" href="#">Sistem Antrian BPPKAD Situbondo</a>
 
 
 
@@ -44,14 +44,14 @@
 
 <a href="landingpage.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Beranda</span></a>
 
-                <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-credit-card-alt"></i> <span class="hidden-sm-down">Buka Rekening</span> </a>
+                <!-- <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-credit-card-alt"></i> <span class="hidden-sm-down">Buka Rekening</span> </a>
                 <div class="collapse" id="menu1">
                     <a href="tabungan.php" class="list-group-item"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI PLUS </a>
                     
                     <a href="#" class="list-group-item" data-parent="#menu1"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI</a>
                     <a href="#" class="list-group-item" data-parent="#menu1"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI BISNIS</a>
-                </div>
-                <a href="layanan.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-lock"></i> <span class="hidden-sm-down">Layanan</span></a>
+                </div> -->
+                <!-- <a href="layanan.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-lock"></i> <span class="hidden-sm-down">Layanan</span></a> -->
 
                 <a href="/bppkad_antrian/admin/admin.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-plus"></i> <span class="hidden-sm-down">Tambah Loket</span></a>
                 
@@ -67,7 +67,7 @@
 
 <div class="card text-center">
   <div class="card-header">
-    Sitem Bank
+    Sistem Antrian BPPKAD Situbondo
   </div>
   <div class="card-body">
     <h4 class="card-title">Antrian Yang Sedang Berjalan</h4>
@@ -765,7 +765,7 @@
 
 
   <div class="card-footer text-muted">
-    Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Sistem Informasi Universitas Riau 2017
+    Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Sistem Informasi BPPKAD Situbondo <?php echo date("Y");?>
   </div>
 
 

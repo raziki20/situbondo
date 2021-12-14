@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sistem Bank</title>
+  <title>Sistem Antrian BPPKAD Situbondo</title>
 <link rel="stylesheet" type="text/css" href="/bppkad_antrian/css/bootstrap.min.css">
 <link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>

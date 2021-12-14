@@ -12,21 +12,21 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="">
 	    <meta name="author" content="">
-	    <title>Admin : Queue</title>
+	    <title>Admin </title>
 	    <link href="/bppkad_antrian/dashboard.css" rel="stylesheet">
 	    <link href="/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
-	    <link href="/assert/css/jumbotron-narrow.css" rel="stylesheet">
+	    <link href="assert/css/jumbotron-narrow.css" rel="stylesheet">
 	    	    <link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script src="/bppkad_antrian/assert/js/jquery.min.js"></script>
 	</head>
   	<body>
   		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Sistem Bank</a>
+      <a class="navbar-brand" href="/bppkad_antrian/view/landingpage.php">Sistem Antrian BPPKAD Situbondo</a>
     </nav>
 
     <div class="card text-center">
   <div class="card-header">
-    Sitem Bank
+    Sistem Antrian BPPKAD Situbondo
   </div>
   <div class="card-body">
     <h4 class="card-title">Admin Control Antrian yang Sedang berlangsung</h4>	
@@ -42,7 +42,7 @@
     	</form>
     	<br/>
       	<footer class="footer">
-        <p>&copy; Sistem Informasi <?php echo date("Y");?></p>
+        <p>&copy; Sistem Informasi Situbondo <?php echo date("Y");?></p>
       	</footer>
     </div>
   	</body>
