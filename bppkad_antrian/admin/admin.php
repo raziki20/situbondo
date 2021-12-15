@@ -14,15 +14,13 @@
 	</head>
   	<body>
   		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="/bppkad_antrian/view/landingpage.php">Sistem Antrian BPPKAD Situbondo</a>
-    </nav>
-
-    <div class="card text-center">
-  <div class="card-header">
-    Sitem Antrian BPPKAD Situbondo
-  <div class="card-body">
-    <h4 class="card-title">Tambah Loket</h4>	
-    <div class="container">
+      	<a class="navbar-brand" href="/bppkad_antrian/view/landingpage.php">Sistem Antrian BPPKAD Situbondo</a>
+    	</nav>
+	    <div class="card text-center">
+  			<div class="card-header"> Sitem Antrian BPPKAD Situbondo </div>
+  				<div class="card-body">
+    			<h4 class="card-title">Tambah Loket</h4>	
+    			<div class="container">
     	<form>
     		<div class="jumbotron">
 	        <h1 class="counter">

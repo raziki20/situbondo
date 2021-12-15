@@ -31,39 +31,19 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Sistem Antrian BPPKAD Situbondo</a>
-
-
-
     </nav>
-    
 
     <div class="container-fluid">
       <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-<div class="list-group panel">
-
-<a href="landingpage.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Beranda</span></a>
-
-                <!-- <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-credit-card-alt"></i> <span class="hidden-sm-down">Buka Rekening</span> </a>
-                <div class="collapse" id="menu1">
-                    <a href="tabungan.php" class="list-group-item"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI PLUS </a>
-                    
-                    <a href="#" class="list-group-item" data-parent="#menu1"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI</a>
-                    <a href="#" class="list-group-item" data-parent="#menu1"><i class="fa fa-credit-card"></i> <span class="hidden-sm-down">BNI BISNIS</a>
-                </div> -->
-                <!-- <a href="layanan.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-lock"></i> <span class="hidden-sm-down">Layanan</span></a> -->
-
-                <a href="/bppkad_antrian/admin/admin.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-plus"></i> <span class="hidden-sm-down">Tambah Loket</span></a>
-                
-                
-                 <a href="index.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-user-circle-o"></i> <span class="hidden-sm-down">Keluar</span></a>
-            </div>
-
-
+          <div class="list-group panel">
+          <a href="landingpage.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Beranda</span></a>
+          <a href="/bppkad_antrian/admin/admin.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-plus"></i> <span class="hidden-sm-down">Tambah Loket</span></a>
+          <a href="index.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-user-circle-o"></i> <span class="hidden-sm-down">Keluar</span></a>
+          </div>
         </nav>
 
 <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-
 
 <div class="card text-center">
   <div class="card-header">
@@ -71,14 +51,12 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">Antrian Yang Sedang Berjalan</h4>
-
-
-<div class="row loket">
-        </div>
+      <div class="row loket">
+      </div>
       <div class="audio">
-        <audio id="in" src="/bppkad_antrian/audio/new/in.wav"></audio>
-        <audio id="out" src="/bppkad_antrian/audio/new/out.wav"></audio>
-        <audio id="suarabel" src="/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
+      <audio id="in" src="/bppkad_antrian/audio/new/in.wav"></audio>
+      <audio id="out" src="/bppkad_antrian/audio/new/out.wav"></audio>
+      <audio id="suarabel" src="/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
       <audio id="suarabelnomorurut" src="/bppkad_antrian/audio/new/nomor-urut.MP3"></audio> 
       <audio id="suarabelsuarabelloket" src="/bppkad_antrian/audio/new/konter.MP3"></audio> 
       <audio id="belas" src="/bppkad_antrian/audio/new/belas.MP3"></audio> 
@@ -98,7 +76,7 @@
       <audio id="suarabelloket9" src="/bppkad_antrian/audio/new/9.MP3"></audio> 
       <audio id="suarabelloket10" src="/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
       <audio id="loket" src="/bppkad_antrian/audio/new/loket.MP3"></audio> 
-        </div>
+      </div>
     </div>
     </body>
 
@@ -106,7 +84,7 @@
   $("document").ready(function(){
     var tmp_loket=0;
     setInterval(function() {
-      $.post("/bppkad_antrian/apps/monitoring-daemon.php", function( data ){
+      $.post("/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
         if(tmp_loket!=data['jumlah_loket']){
           $(".col-md-3").remove();
           tmp_loket=0;
@@ -727,7 +705,7 @@
     }, totalwaktu);
     totalwaktu=totalwaktu+1000;
     setTimeout(function() {
-      $.post("/bppkad_antrian/apps/monitoring-daemon-result.php", { id : urut }, function(data){
+      $.post("/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
         if (!data.status) {
           console.log(data.status);   
         }

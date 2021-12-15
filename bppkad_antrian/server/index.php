@@ -6,7 +6,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="">
 	    <meta name="author" content="">
-	    <title>Monitoring : Queue</title>
+	    <title>Monitoring </title>
 	    <link href="/bppkad_antrian/assert/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="/assert/css/jumbotron-narrow-monitoring.css" rel="stylesheet">
 		<script src="/bppkad_antrian/assert/js/jquery.min.js"></script>
@@ -57,7 +57,7 @@
 	$("document").ready(function(){
 		var tmp_loket=0;
 		setInterval(function() {
-			$.post("/bppkad_antrian/apps/monitoring-daemon.php", function( data ){
+			$.post("/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
 				if(tmp_loket!=data['jumlah_loket']){
 					$(".col-md-3").remove();
 					tmp_loket=0;
@@ -678,7 +678,7 @@
 		}, totalwaktu);
 		totalwaktu=totalwaktu+1000;
 		setTimeout(function() {
-			$.post("/bppkad_antrian/apps/monitoring-daemon-result.php", { id : urut }, function(data){
+			$.post("/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
 				if (!data.status) {
 					console.log(data.status);		
 				}
