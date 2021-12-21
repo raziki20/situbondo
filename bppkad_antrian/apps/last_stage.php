@@ -1,7 +1,7 @@
 <?php
 $loket = $_POST['loket'];
 if(false){
-	$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+	$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 	$date = date("Y-m-d");
 	$results = $db->query('SELECT Max(id) as id FROM data_antrian WHERE counter='.$loket.'');
 	$row = $results->fetchArray();

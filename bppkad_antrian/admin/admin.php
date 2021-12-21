@@ -6,18 +6,18 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 	    <title>Admin </title>
-	    <link href="/bppkad_antrian/dashboard.css" rel="stylesheet">
-	    <link href="/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="/situbondo/bppkad_antrian/dashboard.css" rel="stylesheet">
+	    <link href="/situbondo/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="/assert/css/jumbotron-narrow.css" rel="stylesheet">
-	    <link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
-		<script src="/bppkad_antrian/assert/js/jquery.min.js"></script>
+	    <link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="/situbondo/bppkad_antrian/assert/js/jquery.min.js"></script>
 	</head>
   	<body>
-  		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      	<a class="navbar-brand" href="/bppkad_antrian/view/landingpage.php">Sistem Antrian BPPKAD Situbondo</a>
+  		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      	<a class="navbar-brand" href="/situbondo/bppkad_antrian/view/landingpage.php">Sistem Antrian BPPKAD Situbondo</a>
     	</nav>
 	    <div class="card text-center">
-  			<div class="card-header"> Sitem Antrian BPPKAD Situbondo </div>
+  			<div class="card-header"> ADMIN SETTING </div>
   				<div class="card-body">
     			<h4 class="card-title">Tambah Loket</h4>	
     			<div class="container">
@@ -53,7 +53,7 @@
 		$('.peringatan').hide();
 
 		// GET JUMLAH LOKET
-	    $.post( "/bppkad_antrian/apps/admin_server.php", function( data ) {
+	    $.post( "/situbondo/bppkad_antrian/apps/admin_server.php", function( data ) {
 			$(".loket").val(data['jumlah_loket']);
 		},"json");
 		
@@ -65,7 +65,7 @@
 			$.ajax({
 				type: "POST",
 				dataType: "json",
-				url: "/bppkad_antrian/apps/admin_server.php",//request
+				url: "/situbondo/bppkad_antrian/apps/admin_server.php",//request
 				data: data,
 				success: function(data) {
 					if (data["status"])
@@ -84,7 +84,7 @@
 
 	    // RESET 
 		$(".reset").click(function(){
-			$.post( "/bppkad_antrian/apps/admin_reset.php", function( data ) {
+			$.post( "/situbondo/bppkad_antrian/apps/admin_reset.php", function( data ) {
 			var alert = '<div class="alert alert-info alert-dismissible reset_status" role="alert">'+data['status']+'</div>';
 			$(".reset_status").html(alert);
 			},"json");

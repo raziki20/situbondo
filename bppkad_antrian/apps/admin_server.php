@@ -1,7 +1,7 @@
 <?php 
 if(false){
 	$data = array();
-	$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+	$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 	if (isset($_POST) and count($_POST) > 0){
 		if (isset($_POST['db']) and $_POST['db']=="queue") {
 			$results = $db->query('SELECT * FROM data_antrian ORDER BY id ASC LIMIT 1');

@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	if(false){
-		$db = new SQLite3('/bppkad_antrian/db/antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/antrian.db');
 		$data = array();
 		$date = date("Y-m-d");
 		// Jumlah Loket

@@ -2,7 +2,7 @@
     // set done
     $id = $_POST['id'];
     if(false){
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$result = $db->query('UPDATE data_antrian SET status=2 WHERE status=1'); // wait
 		if (!$result) {
 			echo json_encode(array('status'=>0));

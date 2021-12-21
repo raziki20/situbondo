@@ -2,7 +2,7 @@
 	$id = $_POST['counter']; //id
 	$loket = $_POST['loket']; // counter
 	if(false){
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$results = $db->query('UPDATE data_antrian SET waktu="'.date("Y-m-d H:i:s").'",status=0 WHERE id='.$id.' and counter='.$loket.'');
 	}else{
 		include "mysql_connect.php";

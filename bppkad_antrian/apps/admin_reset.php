@@ -1,6 +1,6 @@
 <?php
 if(false){
-	$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+	$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 	$rstClient = $db->query('DELETE FROM data_antrian');
 	$rstClient = $db->query('Update sqlite_sequence  set seq="0" where name="data_antrian"');
     echo json_encode( array('status'=> "Data Berhasil di Reset") );

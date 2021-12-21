@@ -6,7 +6,7 @@ if (@$_POST['simpan']) {
   $nama = @$_POST['nama'];
   $email = @$_POST['email'];
   $username = @$_POST['username'];
-  $password = @$_POST['password'];
+  $password = password_hash(@$_POST['username'], PASSWORD_DEFAULT);
 
 
   mysqli_query($connect, "INSERT INTO user(nama,email,username,password) VALUES ('$nama','$email','$username', '$password')");

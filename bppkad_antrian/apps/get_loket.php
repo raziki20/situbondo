@@ -1,7 +1,7 @@
 <?php 
 	$data = array();
 	if(false){
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$results = $db->query('SELECT DISTINCT(counter) as counter FROM data_antrian');
 		if ( $results->numColumns()) {
 			while ($row = $results->fetchArray()) {

@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Sistem Antrian BPPKAD Situbondo</title>
-<link rel="stylesheet" type="text/css" href="/bppkad_antrian/css/bootstrap.min.css">
-<link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/situbondo/bppkad_antrian/css/bootstrap.min.css">
+<link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="container py-5">
@@ -14,7 +14,7 @@
                     <span class="anchor" id="formLogin"></span>
                     <!-- form card login -->
                     <div class="card rounded-0">
-                        <div class="card-header">
+                        <div class="card-header bg-primary text-light">
                             <h3 class="mb-0">Log in</h3>
                         </div>
                         <div class="card-body">

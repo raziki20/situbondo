@@ -1,6 +1,6 @@
 <?php
 	if(false){
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$rstClient = $db->query('SELECT count(*) as count FROM client_antrian');
 		$rowClient = $rstClient->fetchArray();
 		if($rowClient['count']>0){

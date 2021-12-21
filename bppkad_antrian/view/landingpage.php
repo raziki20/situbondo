@@ -15,21 +15,21 @@
     <meta name="author" content="">
 
     <title>Sistem Antrian BPPKAD Situbondo</title>
-        <link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/situbondo/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/bppkad_antrian/dashboard.css" rel="stylesheet">
+    <link href="/situbondo/bppkad_antrian/dashboard.css" rel="stylesheet">
     
   </head>
   
-<script type="text/javascript" src="/bppkad_antrian/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/bppkad_antrian/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/situbondo/bppkad_antrian/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/situbondo/bppkad_antrian/js/bootstrap.min.js"></script>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <a class="navbar-brand" href="#">Sistem Antrian BPPKAD Situbondo</a>
     </nav>
 
@@ -38,7 +38,8 @@
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <div class="list-group panel">
           <a href="landingpage.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Beranda</span></a>
-          <a href="/bppkad_antrian/admin/admin.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-plus"></i> <span class="hidden-sm-down">Tambah Loket</span></a>
+          <a href="/situbondo/bppkad_antrian/admin/admin.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-plus"></i> <span class="hidden-sm-down">Tambah Loket</span></a>
+          <a href="/situbondo/bppkad_antrian/server/index.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-desktop"></i> <span class="hidden-sm-down">Monitor</span></a>
           <a href="index.php" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-user-circle-o"></i> <span class="hidden-sm-down">Keluar</span></a>
           </div>
         </nav>
@@ -46,7 +47,7 @@
 <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 
 <div class="card text-center">
-  <div class="card-header">
+  <div class="card-header bg-primary text-light">
     Sistem Antrian BPPKAD Situbondo
   </div>
   <div class="card-body">
@@ -54,28 +55,28 @@
       <div class="row loket">
       </div>
       <div class="audio">
-      <audio id="in" src="/bppkad_antrian/audio/new/in.wav"></audio>
-      <audio id="out" src="/bppkad_antrian/audio/new/out.wav"></audio>
-      <audio id="suarabel" src="/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
-      <audio id="suarabelnomorurut" src="/bppkad_antrian/audio/new/nomor-urut.MP3"></audio> 
-      <audio id="suarabelsuarabelloket" src="/bppkad_antrian/audio/new/konter.MP3"></audio> 
-      <audio id="belas" src="/bppkad_antrian/audio/new/belas.MP3"></audio> 
-      <audio id="sebelas" src="/bppkad_antrian/audio/new/sebelas.MP3"></audio> 
-      <audio id="puluh" src="/bppkad_antrian/audio/new/puluh.MP3"></audio> 
-      <audio id="sepuluh" src="/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
-      <audio id="ratus" src="/bppkad_antrian/audio/new/ratus.MP3"></audio> 
-      <audio id="seratus" src="/bppkad_antrian/audio/new/seratus.MP3"></audio> 
-      <audio id="suarabelloket1" src="/bppkad_antrian/audio/new/1.MP3"></audio> 
-      <audio id="suarabelloket2" src="/bppkad_antrian/audio/new/2.MP3"></audio> 
-      <audio id="suarabelloket3" src="/bppkad_antrian/audio/new/3.MP3"></audio> 
-      <audio id="suarabelloket4" src="/bppkad_antrian/audio/new/4.MP3"></audio> 
-      <audio id="suarabelloket5" src="/bppkad_antrian/audio/new/5.MP3"></audio> 
-      <audio id="suarabelloket6" src="/bppkad_antrian/audio/new/6.MP3"></audio> 
-      <audio id="suarabelloket7" src="/bppkad_antrian/audio/new/7.MP3"></audio> 
-      <audio id="suarabelloket8" src="/bppkad_antrian/audio/new/8.MP3"></audio> 
-      <audio id="suarabelloket9" src="/bppkad_antrian/audio/new/9.MP3"></audio> 
-      <audio id="suarabelloket10" src="/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
-      <audio id="loket" src="/bppkad_antrian/audio/new/loket.MP3"></audio> 
+      <audio id="in" src="/situbondo/bppkad_antrian/audio/new/in.wav"></audio>
+      <audio id="out" src="/situbondo/bppkad_antrian/audio/new/out.wav"></audio>
+      <audio id="suarabel" src="/situbondo/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
+      <audio id="suarabelnomorurut" src="/situbondo/bppkad_antrian/audio/new/nomor-urut.MP3"></audio> 
+      <audio id="suarabelsuarabelloket" src="/situbondo/bppkad_antrian/audio/new/konter.MP3"></audio> 
+      <audio id="belas" src="/situbondo/bppkad_antrian/audio/new/belas.MP3"></audio> 
+      <audio id="sebelas" src="/situbondo/bppkad_antrian/audio/new/sebelas.MP3"></audio> 
+      <audio id="puluh" src="/situbondo/bppkad_antrian/audio/new/puluh.MP3"></audio> 
+      <audio id="sepuluh" src="/situbondo/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
+      <audio id="ratus" src="/situbondo/bppkad_antrian/audio/new/ratus.MP3"></audio> 
+      <audio id="seratus" src="/situbondo/bppkad_antrian/audio/new/seratus.MP3"></audio> 
+      <audio id="suarabelloket1" src="/situbondo/bppkad_antrian/audio/new/1.MP3"></audio> 
+      <audio id="suarabelloket2" src="/situbondo/bppkad_antrian/audio/new/2.MP3"></audio> 
+      <audio id="suarabelloket3" src="/situbondo/bppkad_antrian/audio/new/3.MP3"></audio> 
+      <audio id="suarabelloket4" src="/situbondo/bppkad_antrian/audio/new/4.MP3"></audio> 
+      <audio id="suarabelloket5" src="/situbondo/bppkad_antrian/audio/new/5.MP3"></audio> 
+      <audio id="suarabelloket6" src="/situbondo/bppkad_antrian/audio/new/6.MP3"></audio> 
+      <audio id="suarabelloket7" src="/situbondo/bppkad_antrian/audio/new/7.MP3"></audio> 
+      <audio id="suarabelloket8" src="/situbondo/bppkad_antrian/audio/new/8.MP3"></audio> 
+      <audio id="suarabelloket9" src="/situbondo/bppkad_antrian/audio/new/9.MP3"></audio> 
+      <audio id="suarabelloket10" src="/situbondo/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
+      <audio id="loket" src="/situbondo/bppkad_antrian/audio/new/loket.MP3"></audio> 
       </div>
     </div>
     </body>
@@ -84,7 +85,7 @@
   $("document").ready(function(){
     var tmp_loket=0;
     setInterval(function() {
-      $.post("/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
+      $.post("/situbondo/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
         if(tmp_loket!=data['jumlah_loket']){
           $(".col-md-3").remove();
           tmp_loket=0;
@@ -111,7 +112,7 @@
         if (data["next"]) {
           var angka = data["next"];
           for (var i = 0 ; i < angka.toString().length; i++) {
-            $(".audio").append('<audio id="suarabel'+i+'" src="/bppkad_antrian/audio/new/'+angka.toString().substr(i,1)+'.MP3" ></audio>');
+            $(".audio").append('<audio id="suarabel'+i+'" src="/situbondo/bppkad_antrian/audio/new/'+angka.toString().substr(i,1)+'.MP3" ></audio>');
           };
           mulai(data["next"],data["counter"]);
         }else{
@@ -705,7 +706,7 @@
     }, totalwaktu);
     totalwaktu=totalwaktu+1000;
     setTimeout(function() {
-      $.post("/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
+      $.post("/situbondo/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
         if (!data.status) {
           console.log(data.status);   
         }
@@ -720,7 +721,7 @@
     <div class="card" style="width: 20rem;">
         <div class="card-body">
           <h4 class="card-title">Nasabah Antrian</h4>
-          <a href="/bppkad_antrian/client/index.php" class="btn btn-primary">Klik disini</a>
+          <a href="/situbondo/bppkad_antrian/client/index.php" class="btn btn-primary">Klik disini</a>
         </div>
       </div>
     </div>
@@ -729,7 +730,7 @@
     <div class="card" style="width: 20rem;">
         <div class="card-body">
           <h4 class="card-title">Admin Setting Antrian</h4>
-          <a href="/bppkad_antrian/admin/index.php" class="btn btn-primary">Klik disini</a>
+          <a href="/situbondo/bppkad_antrian/admin/index.php" class="btn btn-primary">Klik disini</a>
         </div>
       </div>
     </div> 
@@ -742,7 +743,7 @@
 
 
 
-  <div class="card-footer text-muted">
+  <div class="card-footer text-muted bg-dark">
     Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Sistem Informasi BPPKAD Situbondo <?php echo date("Y");?>
   </div>
 

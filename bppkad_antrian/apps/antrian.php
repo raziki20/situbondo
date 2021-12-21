@@ -1,7 +1,7 @@
 <?php
 	$loket = $_POST['loket'];
 	if (false) {
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$results = $db->query('INSERT INTO data_antrian (counter,waktu,status) VALUES ('.$loket.',"'.date("Y-m-d H:i:s").'",0)');
 		$next_counter = $db->lastInsertRowID();
 	    $data = array('next' => $next_counter);

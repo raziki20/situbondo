@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Sistem Antrian BPPKAD Situbondo</title>
-<link rel="stylesheet" type="text/css" href="/bppkad_antrian/css/bootstrap.min.css">
-<link rel="stylesheet" href="/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/situbondo/bppkad_antrian/css/bootstrap.min.css">
+<link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container py-5">
@@ -15,8 +15,8 @@
 
                     <!-- form card login -->
                     <div class="card rounded-0">
-                        <div class="card-header">
-                            <h3 class="mb-0">Daftar</h3>
+                        <div class="card-header text-light bg-primary">
+                            <h3 class="mb-0 ">Daftar</h3>
                         </div>
                             <div class="card-body">
                             <form class="form" action="p_daftar.php" method="POST">
@@ -40,6 +40,8 @@
                                     <input id="login-username" type="password" class="form-control" name="password" value="" placeholder="password">                                        
                                 </div>
                                 <input style="margin-top: 25px" class="btn btn-info btn-md float-right" type="submit" name="simpan" value="Daftar">
+                                <a style="margin-top: 25px" class="btn btn-dark text-light" href="index.php" role="button">Kembali</a>
+                                
                             </form>
                         </div>
                         <!--/card-block-->

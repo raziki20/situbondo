@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	if(false){
-		$db = new SQLite3('/bppkad_antrian/db/bppkad_antrian.db');
+		$db = new SQLite3('/situbondo/bppkad_antrian/db/bppkad_antrian.db');
 		$result = $db->query('SELECT client From client_antrian'); // execution
 		while ($rows = $result->fetchArray()) {
 			$rst = $db->query('SELECT max(id) as id FROM data_antrian WHERE counter ='. $rows['client'] .' and status=2;'); // execution

@@ -7,9 +7,9 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 	    <title>Monitoring </title>
-	    <link href="/bppkad_antrian/assert/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="/situbondo/bppkad_antrian/assert/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="/assert/css/jumbotron-narrow-monitoring.css" rel="stylesheet">
-		<script src="/bppkad_antrian/assert/js/jquery.min.js"></script>
+		<script src="/situbondo/bppkad_antrian/assert/js/jquery.min.js"></script>
 	</head>
   	<body>
     <div class="container">
@@ -24,28 +24,28 @@
       	<div class="row loket">
       	</div>
 	    <div class="audio">
-		  	<audio id="in" src="/bppkad_antrian/audio/new/in.wav"></audio>
-		  	<audio id="out" src="/bppkad_antrian/audio/new/out.wav"></audio>
-		  	<audio id="suarabel" src="/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
-			<audio id="suarabelnomorurut" src="/bppkad_antrian/audio/new/nomor-urut.MP3"></audio> 
-			<audio id="suarabelsuarabelloket" src="/bppkad_antrian/audio/new/konter.MP3"></audio> 
-			<audio id="belas" src="/bppkad_antrian/audio/new/belas.MP3"></audio> 
-			<audio id="sebelas" src="/bppkad_antrian/audio/new/sebelas.MP3"></audio> 
-			<audio id="puluh" src="/bppkad_antrian/audio/new/puluh.MP3"></audio> 
-			<audio id="sepuluh" src="/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
-			<audio id="ratus" src="/bppkad_antrian/audio/new/ratus.MP3"></audio> 
-			<audio id="seratus" src="/bppkad_antrian/audio/new/seratus.MP3"></audio> 
-			<audio id="suarabelloket1" src="/bppkad_antrian/audio/new/1.MP3"></audio> 
-			<audio id="suarabelloket2" src="/bppkad_antrian/audio/new/2.MP3"></audio> 
-			<audio id="suarabelloket3" src="/bppkad_antrian/audio/new/3.MP3"></audio> 
-			<audio id="suarabelloket4" src="/bppkad_antrian/audio/new/4.MP3"></audio> 
-			<audio id="suarabelloket5" src="/bppkad_antrian/audio/new/5.MP3"></audio> 
-			<audio id="suarabelloket6" src="/bppkad_antrian/audio/new/6.MP3"></audio> 
-			<audio id="suarabelloket7" src="/bppkad_antrian/audio/new/7.MP3"></audio> 
-			<audio id="suarabelloket8" src="/bppkad_antrian/audio/new/8.MP3"></audio> 
-			<audio id="suarabelloket9" src="/bppkad_antrian/audio/new/9.MP3"></audio> 
-			<audio id="suarabelloket10" src="/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
-			<audio id="loket" src="/bppkad_antrian/audio/new/loket.MP3"></audio> 
+		  	<audio id="in" src="/situbondo/bppkad_antrian/audio/new/in.wav"></audio>
+		  	<audio id="out" src="/situbondo/bppkad_antrian/audio/new/out.wav"></audio>
+		  	<audio id="suarabel" src="/situbondo/bppkad_antrian/audio/new/Airport_Bell.mp3"></audio>
+			<audio id="suarabelnomorurut" src="/situbondo/bppkad_antrian/audio/new/nomor-urut.MP3"></audio> 
+			<audio id="suarabelsuarabelloket" src="/situbondo/bppkad_antrian/audio/new/konter.MP3"></audio> 
+			<audio id="belas" src="/situbondo/bppkad_antrian/audio/new/belas.MP3"></audio> 
+			<audio id="sebelas" src="/situbondo/bppkad_antrian/audio/new/sebelas.MP3"></audio> 
+			<audio id="puluh" src="/situbondo/bppkad_antrian/audio/new/puluh.MP3"></audio> 
+			<audio id="sepuluh" src="/situbondo/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
+			<audio id="ratus" src="/situbondo/bppkad_antrian/audio/new/ratus.MP3"></audio> 
+			<audio id="seratus" src="/situbondo/bppkad_antrian/audio/new/seratus.MP3"></audio> 
+			<audio id="suarabelloket1" src="/situbondo/bppkad_antrian/audio/new/1.MP3"></audio> 
+			<audio id="suarabelloket2" src="/situbondo/bppkad_antrian/audio/new/2.MP3"></audio> 
+			<audio id="suarabelloket3" src="/situbondo/bppkad_antrian/audio/new/3.MP3"></audio> 
+			<audio id="suarabelloket4" src="/situbondo/bppkad_antrian/audio/new/4.MP3"></audio> 
+			<audio id="suarabelloket5" src="/situbondo/bppkad_antrian/audio/new/5.MP3"></audio> 
+			<audio id="suarabelloket6" src="/situbondo/bppkad_antrian/audio/new/6.MP3"></audio> 
+			<audio id="suarabelloket7" src="/situbondo/bppkad_antrian/audio/new/7.MP3"></audio> 
+			<audio id="suarabelloket8" src="/situbondo/bppkad_antrian/audio/new/8.MP3"></audio> 
+			<audio id="suarabelloket9" src="/situbondo/bppkad_antrian/audio/new/9.MP3"></audio> 
+			<audio id="suarabelloket10" src="/situbondo/bppkad_antrian/audio/new/sepuluh.MP3"></audio> 
+			<audio id="loket" src="/situbondo/bppkad_antrian/audio/new/loket.MP3"></audio> 
        	</div>
       <footer class="footer">
         <center><p>&copy; Sistem Informasi BPPKAD Situbondo <?php echo date("Y");?></p></center>
@@ -57,7 +57,7 @@
 	$("document").ready(function(){
 		var tmp_loket=0;
 		setInterval(function() {
-			$.post("/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
+			$.post("/situbondo/bppkad_antrian/apps/monitoring_antrian.php", function( data ){
 				if(tmp_loket!=data['jumlah_loket']){
 					$(".col-md-3").remove();
 					tmp_loket=0;
@@ -84,7 +84,7 @@
 				if (data["next"]) {
 					var angka = data["next"];
 					for (var i = 0 ; i < angka.toString().length; i++) {
-						$(".audio").append('<audio id="suarabel'+i+'" src="/bppkad_antrian/audio/new/'+angka.toString().substr(i,1)+'.MP3" ></audio>');
+						$(".audio").append('<audio id="suarabel'+i+'" src="/situbondo/bppkad_antrian/audio/new/'+angka.toString().substr(i,1)+'.MP3" ></audio>');
 					};
 					mulai(data["next"],data["counter"]);
 				}else{
@@ -678,7 +678,7 @@
 		}, totalwaktu);
 		totalwaktu=totalwaktu+1000;
 		setTimeout(function() {
-			$.post("/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
+			$.post("/situbondo/bppkad_antrian/apps/monitoring_antrian_result.php", { id : urut }, function(data){
 				if (!data.status) {
 					console.log(data.status);		
 				}
