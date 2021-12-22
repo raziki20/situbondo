@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <!-- <meta http-equiv="refresh" content="60"> -->
     <title>Sistem Antrian BPPKAD Situbondo</title>
         <link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -25,7 +25,8 @@
     
   </head>
   
-<script type="text/javascript" src="/situbondo/bppkad_antrian/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
 <script type="text/javascript" src="/situbondo/bppkad_antrian/js/bootstrap.min.js"></script>
 
   <body>
@@ -729,16 +730,16 @@
 <div class="col-md-6">
     <div class="card" style="width: 20rem;">
         <div class="card-body">
-          <h4 class="card-title">Admin Setting Antrian</h4>
+          <h4 class="card-title">Admin Control</h4>
           <a href="/situbondo/bppkad_antrian/admin/index.php" class="btn btn-primary">Klik disini</a>
         </div>
       </div>
     </div> 
-
+<br>
 </div>  
 </div>
 </center>
-
+<br>
 <br>
 
 

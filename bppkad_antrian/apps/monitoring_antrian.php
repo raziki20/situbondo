@@ -9,7 +9,7 @@
 		$loket = $results->fetchArray();
 		$data['jumlah_loket'] = $loket['jumlah_loket']; // set jumlah loket
 
-		$client = $db->query('SELECT client From client_antrian'); // execution
+		$client = $db->query('SELECT client FROM client_antrian'); // execution
 		while ($cl = $client->fetchArray()) {
 			//echo 'SELECT max(id) as id FROM data_antrian WHERE counter ='. $cl['client'] .' and status=2 and waktu like "'. $date.'%"';
 
