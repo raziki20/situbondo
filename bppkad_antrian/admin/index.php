@@ -30,7 +30,7 @@
   			<div class="card-body">
     		<h4 class="card-title">Control Antrian yang Sedang berlangsung</h4>	
     			<div class="container">
-				<!-- <button class="btn btn-small btn-danger try_queue" type="button" style="float:right;padding:20px;">Ulangi Panggilan &nbsp;<span class="glyphicon glyphicon-volume-up"></span>     -->
+				<button class="btn btn-small btn-danger try_queue" type="button" style="float:right;padding:20px;">Ulangi Panggilan &nbsp;<span class="glyphicon glyphicon-volume-up"></span>    
         		</button>
     	<form>
     		<div class="jumbotron">
@@ -65,6 +65,74 @@
 			},"json");
 		});
 
+		// GET NEXT COUNTER
+		$(".next_queue").click(function()
+		{
+			var loket = $(".loket").val();
+			if (loket==0) {
+				$(".peringatan").show();
+			}else{
+				var data = {"loket" : loket};
+				$.ajax({
+					type: "POST",
+					dataType: "json",
+					url: "/situbondo/bppkad_antrian/apps/antrian.php",//request
+					data: data,
+					success: function(data) {
+						$(".jumbotron h1").html(data["next"]);
+						if (data["idle"]=="TRUE") {
+							$(".next_queue").hide();
+							clearInterval(timerId_adik);
+							adik_adudu(loket, data["next"]);
+						}
+					}
+				});
+				return false;
+			}
+			
+		});
+
+		var timerId=0;
+		// ADUDU
+		function adudu(loket, counter){
+			timerId = setInterval(function() {
+				 $.post("/situbondo/bppkad_antrian/apps/antrian_try_cek.php", { loket : loket, counter : counter }, function(msg){
+					if(msg.huft == 2){
+						$(".try_queue").show();
+					}
+				},'JSON');
+			}, 1000);
+		 }
+		
+		var timerId_adik=0;
+		// ADIK_ADUDU
+		function adik_adudu(loket, counter){
+			timerId_adik = setInterval(function() {
+				 $.post("/situbondo/bppkad_antrian/apps/antrian_cek.php", { loket : loket, counter : counter }, function(msg){
+					if(msg.huft == 2){
+						$(".next_queue").show();
+					}
+				},'JSON');
+			}, 1000);
+		}
+
+		// TRY CALL
+		$(".try_queue").click(function(){
+			var loket = $(".loket").val();
+			if (loket==0) {
+	    		$(".peringatan").show();
+			}else{
+				var counter = $(".counter").text();
+				$.post("/situbondo/bppkad_antrian/apps/antrian_try.php", { loket : loket, counter : counter }, function(msg){
+					if(msg.huft == 0){
+						$(".try_queue").hide();
+						clearInterval(timerId);
+						adudu(loket, counter);
+					}
+				},'JSON'); //request
+				return false;
+			}
+		});	
 	});
 	</script>
 </html>
