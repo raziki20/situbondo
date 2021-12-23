@@ -721,7 +721,7 @@
   <div class="col-md-6">
     <div class="card" style="width: 20rem;">
         <div class="card-body">
-          <h4 class="card-title">Nasabah Antrian</h4>
+          <h4 class="card-title">Pengambilan Nomor Antrian</h4>
           <a href="/situbondo/bppkad_antrian/client/index.php" class="btn btn-primary">Klik disini</a>
         </div>
       </div>
@@ -730,7 +730,7 @@
 <div class="col-md-6">
     <div class="card" style="width: 20rem;">
         <div class="card-body">
-          <h4 class="card-title">Admin Control</h4>
+          <h4 class="card-title">Panggil Nomor Antrian</h4>
           <a href="/situbondo/bppkad_antrian/admin/index.php" class="btn btn-primary">Klik disini</a>
         </div>
       </div>

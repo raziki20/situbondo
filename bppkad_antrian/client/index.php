@@ -14,13 +14,14 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 		<!-- <meta http-equiv="refresh" content="10"> -->
-	    <title>Client </title>
+	    <title>Ambil Antrian </title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
 	    <link href="/situbondo/bppkad_antrian/dashboard.css" rel="stylesheet">
 	    <link href="/situbondo/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
-	    <link href="/assert/css/jumbotron-narrow.css" rel="stylesheet">
+	    <link href="/situbondo/bppkad_antrian/assert/css/jumbotron-narrow.css" rel="stylesheet">
 	    <link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 	</head>
   	<body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
@@ -28,7 +29,7 @@
 	</nav>
 
 	<div class="card text-center">
-  		<div class="card-header">Client Sistem</div>
+  		<div class="card-header">PENGAMBILAN NOMOR ANTRIAN </div>
   			<div class="card-body">
     		<h4 class="card-title">Silahkan Ambil Nomor Antrian</h4>
 			    <div class="container">
@@ -40,8 +41,8 @@
         	0
         </h1>
         <p>
-	        <a class="btn btn-lg btn-primary next_queue" href="#" role="button" >
-				Next &nbsp;<span class="fa fa-chevron-circle-right"></span>
+		
+	        <a class="btn btn-lg btn-primary next_queue" onClick="window.location.href=window.location.href" role="button">Next &nbsp;<span class="fa fa-chevron-circle-right"></span>
 	        </a>
         </p>
       	</div>

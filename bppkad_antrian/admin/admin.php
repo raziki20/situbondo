@@ -6,11 +6,11 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 		<!-- <meta http-equiv="refresh" content="10"> -->
-	    <title>Admin </title>
+	    <title>Admin Setting </title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
 	    <link href="/situbondo/bppkad_antrian/dashboard.css" rel="stylesheet">
 	    <link href="/situbondo/bppkad_antrian/css/bootstrap.min.css" rel="stylesheet">
-	    <link href="/assert/css/jumbotron-narrow.css" rel="stylesheet">
+	    <link href="/situbondo/bppkad_antrian/assert/css/jumbotron-narrow.css" rel="stylesheet">
 	    <link rel="stylesheet" href="/situbondo/bppkad_antrian/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
