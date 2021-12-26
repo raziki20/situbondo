@@ -17,8 +17,8 @@
 		</li>
 	    <li class="list-group-item text-center">
 	    	<div class="row card-link"></div>
-	    	<h4>ANTRIAN</h4><h1></h1><h6></h6>
-	    </li>
+	    	<h4>ANTRIAN</h4><h1><?php echo $_GET['id'] ?></h1><h6></h6>
+	    </li> 
 	    <li class="list-group-item text-center"><h3>TERIMAKASIH</h3></li>
 	  </ul>
 	</div>

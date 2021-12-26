@@ -33,8 +33,8 @@
   			<div class="card-body">
     		<h4 class="card-title">Silahkan Ambil Nomor Antrian</h4>
 			    <div class="container">
-        		<button class="btn btn-small btn-danger try_queue" type="button" style="float:right;padding:20px;">Ulangi Panggilan &nbsp;<span class="glyphicon glyphicon-volume-up"></span>    
-        		</button>
+        		<!-- <button class="btn btn-small btn-danger try_queue" type="button" style="float:right;padding:20px;">Ulangi Panggilan &nbsp;<span class="glyphicon glyphicon-volume-up"></span>    
+        		</button> -->
         
 		<div class="jumbotron">
         <h1 class="counter">
@@ -42,7 +42,7 @@
         </h1>
         <p>
 		
-	        <a class="btn btn-lg btn-primary next_queue" onClick="window.location.href=window.location.href" role="button">Next &nbsp;<span class="fa fa-chevron-circle-right"></span>
+	        <a class="btn btn-lg btn-primary next_queue" href="#" role="button" >Next &nbsp;<span class="fa fa-chevron-circle-right"></span>
 	        </a>
         </p>
       	</div>
@@ -52,7 +52,7 @@
         		<option value="0">-PILIH NOMOR LOKET-</option>
 			</select>
 
-			<p>Silakan Screen Shoot No Antrian Anda</p>
+			<p></p>
 
         	<br/>
         	<div class="alert alert-danger peringatan" role="alert">
@@ -136,6 +136,7 @@
 				$(".peringatan").show();
 			}else{
 				var data = {"loket" : loket};
+				// console.log(data);
 				$.ajax({
 					type: "POST",
 					dataType: "json",
@@ -143,13 +144,18 @@
 					data: data,
 					success: function(data) {
 						$(".jumbotron h1").html(data["next"]);
+						console.log(data["next"]);
+						window.open("/situbondo/bppkad_antrian/client/cetak.php?id="+data['next'], "_blank");
 						if (data["idle"]=="TRUE") {
-							$(".next_queue").hide();
+							// $(".next_queue").hide();
 							clearInterval(timerId_adik);
 							adik_adudu(loket, data["next"]);
+							
 						}
 					}
 				});
+				
+				// window.location.href=window.location.href;
 				return false;
 			}
 			

@@ -10,7 +10,8 @@
 		include "mysql_connect.php";
 		$rstClient = $mysqli->query("SELECT * FROM data_antrian WHERE counter='' AND status=3 LIMIT 1");
 		$rowClient = $rstClient->fetch_array();
-		if(count($rowClient)>0){
+		//  print_r($rstClient); exit;
+		if($rstClient->num_rows > 0){
 			$id = $rowClient['id'];
 			$results = $mysqli->query('UPDATE data_antrian SET counter='.$loket.', status=0 WHERE id='.$id.'');
 			$next_counter = $id;
